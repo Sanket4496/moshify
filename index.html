@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Moshify</title>
 </head>
 
@@ -30,18 +31,18 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 data-aos="fade-right" class="block__heading">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your website in less than 60 seconds</p>
                 <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
                 <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
                 <img class="hero__image" src="images/banner.png" alt="" />
             </picture>
         </div>
     </section>
-    <section class="block container block-domain">
+    <section data-aos="fade-up" class="block container block-domain">
         <header class="block__header">
             <h2>The best webhosting Starting at per month</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos in iure, voluptatibus minus quam
@@ -62,7 +63,7 @@
             <li>.xyz $10</li>
         </ul>
     </section>
-    <section class="block container block-plans">
+    <section data-aos="fade-up" class="block container block-plans">
         <div class="grid grid--1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -134,7 +135,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, eveniet!</p>
         </header>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#easy"></use>
@@ -146,7 +147,7 @@
                     aperiam molestiae. Saepe?</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
                 <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
                 <img src="images/easy@2x.jpg" alt="" class="feature__image">
@@ -215,12 +216,12 @@
             <h2 class="block__heading">User-Friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
+            <picture data-aos="fade-right" class="block-showcase__image">
                 <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
                 <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
                 <img src="images/ipad@2x.png" alt="" />
             </picture>
-            <ul class="list">
+            <ul class="list" data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -269,7 +270,7 @@
             </ul>
         </div>
     </section>
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
             <h2 class="block__heading">
                 What our Customer are Saying
@@ -404,7 +405,11 @@
             </section>
         </div>
     </footer>
-    <script src="js/main.js" />
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

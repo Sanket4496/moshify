@@ -499,6 +499,11 @@ a {
     padding: 3rem;
 }
 
+.testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
+}
+
 .testimonial__image {
     position: relative;
 }
