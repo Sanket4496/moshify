@@ -1,7 +1,7 @@
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
-    ---color-accent: #ff3400;
+    --color-accent: #ff3400;
     --color-heading: #1b0760;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
@@ -67,7 +67,7 @@ a {
 }
 
 .link-arrow {
-    color: var(---color-accent);
+    color: var(--color-accent);
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
@@ -182,7 +182,7 @@ a {
 }
 
 .icon-container--accent {
-    background: var(---color-accent);
+    background: var(--color-accent);
 }
 
 /* Button */
@@ -226,7 +226,7 @@ a {
 }
 
 .btn--accent {
-    background-color: var(---color-accent);
+    background-color: var(--color-accent);
     color: #fff;
 }
 
